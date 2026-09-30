@@ -1,0 +1,697 @@
+{
+  "source": "ballista-fabric-0.27.1+mc26.2.jar",
+  "sha256": "e85ac8a4a68c773b2ab5b81c1dc7eedad2b6eee91028ebd29d8c68ab1c245b55",
+  "recipes": [
+    {
+      "id": "light_ballista",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/light_ballista.png",
+      "slots": [
+        "minecraft:string",
+        null,
+        "minecraft:string",
+        "minecraft:stick",
+        "minecraft:bow",
+        "minecraft:stick",
+        "minecraft:stick",
+        "#minecraft:planks",
+        "minecraft:stick"
+      ],
+      "result": "ballista:light_ballista",
+      "count": 1,
+      "sha256": "6fbe38233581a5100354d1fa17aa76af0a8f72a3e3c27edbc8d0fe4e895f5bb0"
+    },
+    {
+      "id": "medium_ballista",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/medium_ballista.png",
+      "slots": [
+        "minecraft:string",
+        "minecraft:iron_ingot",
+        "minecraft:string",
+        "#minecraft:planks",
+        "minecraft:crossbow",
+        "#minecraft:planks",
+        "minecraft:stick",
+        "#minecraft:planks",
+        "minecraft:stick"
+      ],
+      "result": "ballista:medium_ballista",
+      "count": 1,
+      "sha256": "0e9d0e2d666d1ea3ba9c8ea27e279d8738e2b8b0388494ca73f52eb23708d819"
+    },
+    {
+      "id": "ballista",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/ballista.png",
+      "slots": [
+        "minecraft:string",
+        "minecraft:iron_ingot",
+        "minecraft:string",
+        "#minecraft:logs",
+        "minecraft:crossbow",
+        "#minecraft:logs",
+        "minecraft:iron_ingot",
+        "#minecraft:logs",
+        "minecraft:iron_ingot"
+      ],
+      "result": "ballista:ballista",
+      "count": 1,
+      "sha256": "acfe56b407a2aaa138a61204124fa88ca7b6817c697c8a74298d438c96e1e496"
+    },
+    {
+      "id": "bolt_primer",
+      "type": "minecraft:crafting_shapeless",
+      "image": "generated/crafts/bolt_primer.png",
+      "slots": [
+        "minecraft:iron_nugget",
+        "minecraft:stick",
+        "minecraft:feather",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "result": "ballista:bolt_primer",
+      "count": 4,
+      "sha256": "c2263f3be6810cdfe11544ec4a6e74167e895f3237923f66a288d0c99db34f9f"
+    },
+    {
+      "id": "wooden_spikes",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/wooden_spikes.png",
+      "slots": [
+        "minecraft:stick",
+        "minecraft:stick",
+        "minecraft:stick",
+        null,
+        null,
+        null,
+        "minecraft:stone_slab",
+        "minecraft:stone_slab",
+        "minecraft:stone_slab"
+      ],
+      "result": "ballista:wooden_spikes",
+      "count": 1,
+      "sha256": "538ffe30af64c18068d401c7b06e10686749beb6dfcdd93ed0ad699f0a4c12e0"
+    },
+    {
+      "id": "iron_spikes",
+      "type": "minecraft:crafting_shapeless",
+      "image": "generated/crafts/iron_spikes.png",
+      "slots": [
+        "ballista:wooden_spikes",
+        "minecraft:iron_ingot",
+        "minecraft:iron_ingot",
+        "minecraft:iron_ingot",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "result": "ballista:iron_spikes",
+      "count": 1,
+      "sha256": "b7559f0d37ec282cc1de8c1115a42341c12ef40f1eb06c44de79f84edfc157ee"
+    },
+    {
+      "id": "obsidian_fletching_table",
+      "type": "minecraft:crafting_shapeless",
+      "image": "generated/crafts/obsidian_fletching_table.png",
+      "slots": [
+        "minecraft:fletching_table",
+        "minecraft:obsidian",
+        "minecraft:obsidian",
+        "minecraft:obsidian",
+        "minecraft:obsidian",
+        null,
+        null,
+        null,
+        null
+      ],
+      "result": "ballista:obsidian_fletching_table",
+      "count": 1,
+      "sha256": "9a91db6189b782e14559814a3d194db5993aec9f2fc326b0158d239f94998168"
+    },
+    {
+      "id": "infernal_fletching_table",
+      "type": "minecraft:crafting_shapeless",
+      "image": "generated/crafts/infernal_fletching_table.png",
+      "slots": [
+        "minecraft:fletching_table",
+        "minecraft:blaze_powder",
+        "minecraft:blaze_powder",
+        "minecraft:nether_brick",
+        "minecraft:nether_brick",
+        null,
+        null,
+        null,
+        null
+      ],
+      "result": "ballista:infernal_fletching_table",
+      "count": 1,
+      "sha256": "6abe8a67b3d1a3fa03d95747bd05d1b1f527c40b5990b60f1ed18c8fe0049979"
+    },
+    {
+      "id": "echo_fletching_table",
+      "type": "minecraft:crafting_shapeless",
+      "image": "generated/crafts/echo_fletching_table.png",
+      "slots": [
+        "minecraft:fletching_table",
+        "minecraft:echo_shard",
+        "minecraft:echo_shard",
+        "minecraft:echo_shard",
+        "minecraft:echo_shard",
+        null,
+        null,
+        null,
+        null
+      ],
+      "result": "ballista:echo_fletching_table",
+      "count": 1,
+      "sha256": "2e66f016c3e496f95b736824d74b7b949c8614322c6f76dcd958ae316693f9fe"
+    },
+    {
+      "id": "dragon_hunter_table",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/dragon_hunter_table.png",
+      "slots": [
+        "#minecraft:planks",
+        "minecraft:map",
+        "#minecraft:planks",
+        "minecraft:gold_ingot",
+        "minecraft:smooth_stone",
+        "minecraft:gold_ingot",
+        "minecraft:gold_ingot",
+        "minecraft:smooth_stone",
+        "minecraft:gold_ingot"
+      ],
+      "result": "ballista:dragon_hunter_table",
+      "count": 1,
+      "sha256": "e867111d3a66e8e31a524acc028b0937a2470dccd9cf19df314a5f24e757a2a9"
+    },
+    {
+      "id": "repair_light_ballista",
+      "type": "minecraft:crafting_shapeless",
+      "image": "generated/crafts/repair_light_ballista.png",
+      "slots": [
+        "ballista:light_ballista_wreck",
+        "minecraft:stick",
+        "minecraft:stick",
+        "minecraft:string",
+        "minecraft:string",
+        null,
+        null,
+        null,
+        null
+      ],
+      "result": "ballista:light_ballista",
+      "count": 1,
+      "sha256": "51a4ed90f981c41d48e7074646e69154aacfe056b984b142bbf1cdd2ff0ef625"
+    },
+    {
+      "id": "repair_medium_ballista",
+      "type": "minecraft:crafting_shapeless",
+      "image": "generated/crafts/repair_medium_ballista.png",
+      "slots": [
+        "ballista:medium_ballista_wreck",
+        "minecraft:iron_ingot",
+        "minecraft:iron_ingot",
+        "#minecraft:logs",
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "result": "ballista:medium_ballista",
+      "count": 1,
+      "sha256": "758664690a5ba067fdc862b98bc3dc1b00e6a1e513a88da71eac50a25d2b9390"
+    },
+    {
+      "id": "repair_heavy_ballista",
+      "type": "minecraft:crafting_shapeless",
+      "image": "generated/crafts/repair_heavy_ballista.png",
+      "slots": [
+        "ballista:heavy_ballista_wreck",
+        "minecraft:iron_ingot",
+        "minecraft:iron_ingot",
+        "minecraft:iron_ingot",
+        "minecraft:crossbow",
+        null,
+        null,
+        null,
+        null
+      ],
+      "result": "ballista:ballista",
+      "count": 1,
+      "sha256": "dc39398255a9a2826bbddd388075ab3a97a1a6d596fcd96d88550131e534ca79"
+    },
+    {
+      "id": "dragon_saddle",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/dragon_saddle.png",
+      "slots": [
+        "minecraft:leather",
+        "minecraft:leather",
+        "minecraft:leather",
+        "minecraft:iron_ingot",
+        "ballista:dragon_scale",
+        "minecraft:iron_ingot",
+        null,
+        "ballista:dragon_scale",
+        null
+      ],
+      "result": "ballista:dragon_saddle",
+      "count": 1,
+      "sha256": "0d9e863b420b69f9520f504458ce47ebfd2e96d799abaee2342ab0f21d32aed1"
+    },
+    {
+      "id": "dragon_pack_saddle",
+      "type": "minecraft:crafting_shapeless",
+      "image": "generated/crafts/dragon_pack_saddle.png",
+      "slots": [
+        "ballista:dragon_saddle",
+        "minecraft:chest",
+        "minecraft:chest",
+        "minecraft:chest",
+        "minecraft:chest",
+        null,
+        null,
+        null,
+        null
+      ],
+      "result": "ballista:dragon_pack_saddle",
+      "count": 1,
+      "sha256": "79850bbb60c9d29b70cc0cb06a6ebd3ed4cbdb2bfcc801e990ec19026434c2d6"
+    },
+    {
+      "id": "draconic_staff",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/draconic_staff.png",
+      "slots": [
+        null,
+        "minecraft:gold_ingot",
+        null,
+        "ballista:dragon_scale",
+        "minecraft:emerald",
+        "ballista:dragon_scale",
+        null,
+        "minecraft:stick",
+        null
+      ],
+      "result": "ballista:draconic_staff",
+      "count": 1,
+      "sha256": "e323e4df24d0c7338264bc40eb31617ea8059f10c1d21d7ae05f94394af66521"
+    },
+    {
+      "id": "iron_dragon_armor",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/iron_dragon_armor.png",
+      "slots": [
+        "minecraft:iron_ingot",
+        null,
+        "minecraft:iron_ingot",
+        "minecraft:iron_ingot",
+        "ballista:dragon_scale",
+        "minecraft:iron_ingot",
+        "minecraft:iron_ingot",
+        null,
+        "minecraft:iron_ingot"
+      ],
+      "result": "ballista:iron_dragon_armor",
+      "count": 1,
+      "sha256": "41c34786d216c2e014042aac7ff4acc41e5d1590a156b923cddab539671c4aef"
+    },
+    {
+      "id": "gold_dragon_armor",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/gold_dragon_armor.png",
+      "slots": [
+        "minecraft:gold_ingot",
+        null,
+        "minecraft:gold_ingot",
+        "minecraft:gold_ingot",
+        "ballista:dragon_scale",
+        "minecraft:gold_ingot",
+        "minecraft:gold_ingot",
+        null,
+        "minecraft:gold_ingot"
+      ],
+      "result": "ballista:gold_dragon_armor",
+      "count": 1,
+      "sha256": "b2e6696ab112a4eb52536c503a7b010dbbeb77c56c3dcbbf849e0d56d00f8854"
+    },
+    {
+      "id": "diamond_dragon_armor",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/diamond_dragon_armor.png",
+      "slots": [
+        "minecraft:diamond",
+        null,
+        "minecraft:diamond",
+        "minecraft:diamond",
+        "ballista:dragon_scale",
+        "minecraft:diamond",
+        "minecraft:diamond",
+        null,
+        "minecraft:diamond"
+      ],
+      "result": "ballista:diamond_dragon_armor",
+      "count": 1,
+      "sha256": "e08598357226fc53fb3f35a191169b1ae5dd25557383544c37db66a5529bca08"
+    },
+    {
+      "id": "netherite_dragon_armor",
+      "type": "minecraft:crafting_shapeless",
+      "image": "generated/crafts/netherite_dragon_armor.png",
+      "slots": [
+        "ballista:diamond_dragon_armor",
+        "minecraft:netherite_ingot",
+        "ballista:dragon_scale",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "result": "ballista:netherite_dragon_armor",
+      "count": 1,
+      "sha256": "61f15bf439d6b83400232226c475290d08371c38992d9ced67dae2b3e46d25c2"
+    },
+    {
+      "id": "scale_helmet_lining",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/scale_helmet_lining.png",
+      "slots": [
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        null,
+        "ballista:dragon_scale",
+        null,
+        null,
+        null
+      ],
+      "result": "ballista:scale_helmet_lining",
+      "count": 1,
+      "sha256": "c7941710b1a9608030206a2b475336288531adb9ffa1e854e46d1e2713d6ab36"
+    },
+    {
+      "id": "scale_chest_lining",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/scale_chest_lining.png",
+      "slots": [
+        "ballista:dragon_scale",
+        null,
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        "ballista:dragon_scale"
+      ],
+      "result": "ballista:scale_chest_lining",
+      "count": 1,
+      "sha256": "25e666b764907778d5a8da07069e986297ef304e1c51224f492eee356b5c1458"
+    },
+    {
+      "id": "scale_leggings_lining",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/scale_leggings_lining.png",
+      "slots": [
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        null,
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        null,
+        "ballista:dragon_scale"
+      ],
+      "result": "ballista:scale_leggings_lining",
+      "count": 1,
+      "sha256": "b053a67c3fec228b7116ef1c5c3cb0ef31b02f4230291d34d14145e0f2f417ed"
+    },
+    {
+      "id": "scale_boots_lining",
+      "type": "minecraft:crafting_shaped",
+      "image": "generated/crafts/scale_boots_lining.png",
+      "slots": [
+        "ballista:dragon_scale",
+        null,
+        "ballista:dragon_scale",
+        "ballista:dragon_scale",
+        null,
+        "ballista:dragon_scale",
+        null,
+        null,
+        null
+      ],
+      "result": "ballista:scale_boots_lining",
+      "count": 1,
+      "sha256": "221977a4c6f710a3d5250c4d915b6cc2f2aa75d339c3d09702a9673593db0ae3"
+    },
+    {
+      "id": "apply_scale_helmet_lining",
+      "type": "ballista:scale_armor",
+      "image": "generated/crafts/apply_scale_helmet_lining.png",
+      "slots": [
+        null,
+        "minecraft:diamond_helmet",
+        "ballista:scale_helmet_lining"
+      ],
+      "result": "minecraft:diamond_helmet",
+      "count": 1,
+      "sha256": "4ec77d9ff428e3e9664a5979bab9451fb206294522684699b539a0b2047ee965"
+    },
+    {
+      "id": "apply_scale_chest_lining",
+      "type": "ballista:scale_armor",
+      "image": "generated/crafts/apply_scale_chest_lining.png",
+      "slots": [
+        null,
+        "minecraft:diamond_chestplate",
+        "ballista:scale_chest_lining"
+      ],
+      "result": "minecraft:diamond_chestplate",
+      "count": 1,
+      "sha256": "b9874b2792ceabd034ae4643420b9bf4fd01a5a731595b3f4a37fe2b562d25ef"
+    },
+    {
+      "id": "apply_scale_leggings_lining",
+      "type": "ballista:scale_armor",
+      "image": "generated/crafts/apply_scale_leggings_lining.png",
+      "slots": [
+        null,
+        "minecraft:diamond_leggings",
+        "ballista:scale_leggings_lining"
+      ],
+      "result": "minecraft:diamond_leggings",
+      "count": 1,
+      "sha256": "1a1bb3f1c77fa0800b77aa448112adb3f8212b5d131b9a421eadf3bbc6d0b0d8"
+    },
+    {
+      "id": "apply_scale_boots_lining",
+      "type": "ballista:scale_armor",
+      "image": "generated/crafts/apply_scale_boots_lining.png",
+      "slots": [
+        null,
+        "minecraft:diamond_boots",
+        "ballista:scale_boots_lining"
+      ],
+      "result": "minecraft:diamond_boots",
+      "count": 1,
+      "sha256": "9d8dd07c0e7401cb417d01ea936818f7a48a72464b07648747fc7eeee3423d1f"
+    },
+    {
+      "id": "dragon_heart",
+      "type": "ballista:dragon_heart",
+      "image": "generated/crafts/dragon_heart.png",
+      "slots": [
+        null,
+        "minecraft:diamond_sword",
+        "ballista:dragon_heart"
+      ],
+      "result": "minecraft:diamond_sword",
+      "count": 1,
+      "sha256": "a72ef8c9c9cfea1bd60868f96f5388953c6c47de6049a364bc937283f9e90727"
+    }
+  ],
+  "icons": [
+    {
+      "id": "ballista:medium_ballista",
+      "image": "generated/icons/medium_ballista.png",
+      "sha256": "4b5d70478398ba223ee729b8808553ceadffd9d4eb5eee59c51ac4bdd0b14716"
+    },
+    {
+      "id": "ballista:draconic_whistle",
+      "image": "generated/icons/draconic_whistle.png",
+      "sha256": "bed315ccc40616340439e0aef54b7aafab9d726da4aef8b8ddbddf47abe0c270"
+    },
+    {
+      "id": "ballista:blue_dragon_spawn_egg",
+      "image": "generated/icons/blue_dragon_spawn_egg.png",
+      "sha256": "6b22e6cce3a454ad916dd7f39455f1c319dd01f29c74b25614065a0b8ce5eef9"
+    },
+    {
+      "id": "ballista:dragon_scale",
+      "image": "generated/icons/dragon_scale.png",
+      "sha256": "b89097d432c8e1a048142fee54c46d6e30113195b14e13c7a63d5c774a731080"
+    },
+    {
+      "id": "ballista:light_ballista",
+      "image": "generated/icons/light_ballista.png",
+      "sha256": "28bb775233c0f4ef3832839e25407d10495e9e358f1b7240a4106579f3e26ffb"
+    },
+    {
+      "id": "ballista:dragon_pack_saddle",
+      "image": "generated/icons/dragon_pack_saddle.png",
+      "sha256": "f643e916bb1bad2d34c7535bc512806bbf5fedd63fbee506ed9cab40aa4dd88a"
+    },
+    {
+      "id": "ballista:draconic_staff",
+      "image": "generated/icons/draconic_staff.png",
+      "sha256": "9c8c3e5329315176b56ed32174839aee74c6d8495407de82a56e89404339953e"
+    },
+    {
+      "id": "ballista:green_dragon_spawn_egg",
+      "image": "generated/icons/green_dragon_spawn_egg.png",
+      "sha256": "f571d34656125181d573c5cb2b9e263fe1c09856722dad21260d9a6c3ab1adac"
+    },
+    {
+      "id": "ballista:iron_dragon_armor",
+      "image": "generated/icons/iron_dragon_armor.png",
+      "sha256": "9d4477fae5b11aff2edcc2cbc6bf9bbf75fbacb8500ba9dd75162647e2eacee2"
+    },
+    {
+      "id": "ballista:scale_boots_lining",
+      "image": "generated/icons/scale_boots_lining.png",
+      "sha256": "112c5d4c7709d9afb7b6cf860396e5a7d5b0ea2b09ecea8ec695b745c1b5f595"
+    },
+    {
+      "id": "ballista:red_dragon_spawn_egg",
+      "image": "generated/icons/red_dragon_spawn_egg.png",
+      "sha256": "f2ff1c2cae18509b06460b095d6684af6f4b402d4591c58d67044cbd7640df2b"
+    },
+    {
+      "id": "ballista:scale_helmet_lining",
+      "image": "generated/icons/scale_helmet_lining.png",
+      "sha256": "e0457a2adf583cb4be8d0e72c0628d5e1b17c17943a4f02486150b7778f01b8a"
+    },
+    {
+      "id": "ballista:scale_chest_lining",
+      "image": "generated/icons/scale_chest_lining.png",
+      "sha256": "bcf62ea1f73d95580e5bfa84231a436cec9c8df9f8914365574ba842e7380a07"
+    },
+    {
+      "id": "ballista:netherite_dragon_armor",
+      "image": "generated/icons/netherite_dragon_armor.png",
+      "sha256": "afdeb391257eef3fb980a467e5b6e92aeb131b084d969da770942a32946eaf8d"
+    },
+    {
+      "id": "ballista:ballista",
+      "image": "generated/icons/ballista.png",
+      "sha256": "cf07271ab7b40c75a305c06057d9668cec6aa5662197988fafb75e4ebae78faf"
+    },
+    {
+      "id": "ballista:scale_leggings_lining",
+      "image": "generated/icons/scale_leggings_lining.png",
+      "sha256": "04524a325e58825454010fb3aeaf7ae87aaeb9da56e098d655fedbed34ddadba"
+    },
+    {
+      "id": "ballista:dragon_heart",
+      "image": "generated/icons/dragon_heart.png",
+      "sha256": "f1e825f8db2cc387500c46742043748be1c076f1e16dde2a8a454da6748fe6e4"
+    },
+    {
+      "id": "ballista:dragon_saddle",
+      "image": "generated/icons/dragon_saddle.png",
+      "sha256": "be88ac4687414f713d76a84a1aaaf94b07872c552fb89d5a0a6dd3b8a8ec6a0d"
+    },
+    {
+      "id": "ballista:gold_dragon_armor",
+      "image": "generated/icons/gold_dragon_armor.png",
+      "sha256": "a1ef02a9ead1be5226d9e6a0a2b4bb7837439d31ef36ddee37b04897623a53e8"
+    },
+    {
+      "id": "ballista:bolt_primer",
+      "image": "generated/icons/bolt_primer.png",
+      "sha256": "ba287a4f17f3d763a92262810095aafdd7a9c25a2c25437c9e5bedb873a209de"
+    },
+    {
+      "id": "ballista:diamond_dragon_armor",
+      "image": "generated/icons/diamond_dragon_armor.png",
+      "sha256": "4fa54b2ec8337ba83ea592ac9d5c27866e646e0b4863dd2a789e20920b4c0e8a"
+    },
+    {
+      "id": "ballista:dragon_hunter_table",
+      "image": "generated/icons/dragon_hunter_table.png",
+      "sha256": "a5bf2d16f443a5f451118ea1e295b5f1de49f57dcde19237f79744f9c33d436a"
+    },
+    {
+      "id": "ballista:obsidian_fletching_table",
+      "image": "generated/icons/obsidian_fletching_table.png",
+      "sha256": "30cdb107a29ccbaf29f9f9afc60e6c1c6c70eec8484ebacb6ecfc5caff75619f"
+    },
+    {
+      "id": "ballista:infernal_fletching_table",
+      "image": "generated/icons/infernal_fletching_table.png",
+      "sha256": "6b150d52a6e544723c6b6a11121fd610f55b41c7475e482585a98b63098cf706"
+    },
+    {
+      "id": "ballista:echo_fletching_table",
+      "image": "generated/icons/echo_fletching_table.png",
+      "sha256": "8a51b8f26b68933605506c4c7d26b12b7329b4cc5b9cb3338d8f92ee91c0162a"
+    },
+    {
+      "id": "ballista:wooden_spikes",
+      "image": "generated/icons/wooden_spikes.png",
+      "sha256": "1487a8222ed7bcbb00e22ea7811ab67c19027f6f91cecb758543245c0bee9127"
+    },
+    {
+      "id": "ballista:iron_spikes",
+      "image": "generated/icons/iron_spikes.png",
+      "sha256": "ef49972e8de6fbb5862d7ac06ee13190ae85a01bc66999d3fc352644b37a1ae3"
+    },
+    {
+      "id": "ballista:red_dragon_egg",
+      "image": "generated/icons/red_dragon_egg.png",
+      "sha256": "cb584ee86e3e8cdb4700da72d5575c09ec1f34605ebb43c3143b4126f02e7778"
+    },
+    {
+      "id": "ballista:green_dragon_egg",
+      "image": "generated/icons/green_dragon_egg.png",
+      "sha256": "2abbe5fd1df7737adce4bde2d90b089edfc92f3cb558e0a49c6d562806ed2a8e"
+    },
+    {
+      "id": "ballista:blue_dragon_egg",
+      "image": "generated/icons/blue_dragon_egg.png",
+      "sha256": "025f6f9badadec91f09983340e7fe3e6ad5fd30287aeb04cf75e45f6821dea16"
+    },
+    {
+      "id": "ballista:light_ballista_wreck",
+      "image": "generated/icons/light_ballista_wreck.png",
+      "sha256": "4ad8dc4ea0ba8073b3a5b38eacd8b95817410ce60448a21e8fd9458c8e6f9abf"
+    },
+    {
+      "id": "ballista:medium_ballista_wreck",
+      "image": "generated/icons/medium_ballista_wreck.png",
+      "sha256": "59866a851f1ad457688203e6ea1ad785cc984d28c6a5fbd623ceaeb8426fc268"
+    },
+    {
+      "id": "ballista:heavy_ballista_wreck",
+      "image": "generated/icons/heavy_ballista_wreck.png",
+      "sha256": "e07300b6f0373b60af823b4ef604f26595f922ecfa8c057591b8f0d0481210a1"
+    }
+  ],
+  "tests": "Ressources et rendu statique ; pas de lancement de Minecraft.",
+  "crafting_count": 24,
+  "smithing_count": 5
+}
