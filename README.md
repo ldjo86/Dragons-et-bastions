@@ -28,6 +28,8 @@ La nouvelle version contient quatre dragons (rouge, vert, bleu et **noir**), la 
 
 **Documentation actualisée :** [site avec nouveaux chapitres, images et tables](https://ldjo86.github.io/Dragons-et-bastions/#nouveautes) · [guide technique détaillé de la 0.27.10](GUIDE_VERSION_0_27_10.md) · [page de nouveautés](site/maj-0-27-10.html).
 
+**Plan de tests pour chaque version Minecraft :** [matrice de validation 0.27.10](TESTS_VERSION_0_27_10.md) (25 scénarios reproductibles, résultats à renseigner).
+
 **Niveau de validation :** contenu des JAR et code compilé inspectés ; le fonctionnement client/serveur en jeu n'a pas encore été testé.
 
 ---
