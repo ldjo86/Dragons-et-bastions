@@ -1,16 +1,19 @@
-# Inventaire du JAR
+# Inventaire du JAR — mise à jour 0.27.10-candidate
 
-Version analysée : **0.27.1+mc26.2**.
+**Archive analysée :** `ballista-fabric-0.27.10-candidate+mc26.1-26.3-test.jar` (8 octobre 2026), contenant cinq sous-JAR Fabric.
 
-Le JAR contient **118 classes Java compilées**, dont **30 classes client**, **29 recettes**, **20 tables de butin**, **68 textures PNG**, **55 modèles JSON** et **13 blockstates**.
+| Version Minecraft | Classes Java | Recettes JSON | Tables de butin JSON | Textures PNG |
+|---|---:|---:|---:|---:|
+| 26.1 | 201 | 31 | 25 | 89 |
+| 26.1.1 | 201 | 31 | 25 | 89 |
+| 26.1.2 | 201 | 31 | 25 | 89 |
+| 26.2 | 200 | 31 | 25 | 89 |
+| 26.3 | 202 | 31 | 25 | 89 |
 
-## Grandes familles identifiées
+Ce sont les fichiers `.class` (y compris classes internes ou générées), et non le nombre de classes métier distinctes. La différence entre versions comprend des adaptations de compatibilité telles que `Outline261` et `World263`. Le manifeste extérieur déclare Java >=25, Fabric Loader >=0.19.3 et Fabric API.
 
-- **Balistes** : lourde, moyenne et légère, carreaux, variantes de tir et épaves réparables.
-- **Dragons** : rouge, vert et bleu, œufs, éclosion, équipement, inventaire, ordres, attaques et antres.
-- **Équipement draconique** : selle, selle de transport, armures fer/or/diamant/netherite, bâton draconique, cœur et écailles.
-- **Défenses** : pieux en bois et en fer, génération de défenses de village et épaves de balistes.
-- **Tables spéciales** : table de chasse draconique et tables d'archerie en obsidienne, infernale et des profondeurs.
-- **Monde et événements** : antres de dragons, invasions nocturnes, chasseurs de dragons et génération différée.
+**Familles :** balistes et projectiles spéciaux ; dragons rouge, vert, bleu et noir ; œufs, croissance, reproduction et suivi familial ; cœurs classique, gelé et noir ; armures, renforts et équipement ; tanières naturelles, cavernes de montagne, tanières domestiques ; chasseurs villageois et illageois, camps de pillards ; raids draconiques, présage I–V et défis Héros légendaire ; génération de structures, coffres, cartes, animations et textures.
 
-Cette page sert d'index technique. Les pages de gameplay détaillent progressivement chaque système sans inventer les comportements non vérifiés.
+Le bundle contient 31 recettes (29 antérieures + 2 cœurs personnalisés), 25 tables de butin, 32 avancements JSON et 258 JSON au total dans la variante 26.3. Les fichiers de traduction français/anglais comportent des entrées nouvelles pour les interfaces et récompenses. **Aucun test de lancement Minecraft n'a été effectué.**
+
+Voir **[le guide détaillé 0.27.10](GUIDE_VERSION_0_27_10.md)** pour les règles et avertissements, et [le README historique](README.md) pour les illustrations des recettes héritées.
