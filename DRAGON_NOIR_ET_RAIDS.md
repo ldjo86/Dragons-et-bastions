@@ -26,7 +26,7 @@ Ce sont des **attributs de base de l'entité**, pas le résultat garanti de chaq
 
 ## 2. Le chasseur de dragons illageois est réellement un CAVALIER
 
-![Œuf du chasseur illageois](site/generated/icons/illager_dragon_hunter_spawn_egg.png)
+L'**œuf d'apparition du chasseur illageois** est enregistré par le mod ; son icône est rendue par Minecraft et aucun PNG autonome correspondant n'est présent dans les ressources extraites du JAR.
 
 Le **chasseur de dragons illageois**, identifiant **`ballista:illager_dragon_hunter`**, est un ennemi dérivé du **Vindicateur**. Lors du renfort draconique final, à partir du **présage III**, le code :
 
@@ -136,4 +136,4 @@ Le **dragon noir** et le **chasseur monté** constituent deux systèmes liés au
 
 La documentation s'appuie sur le **JAR réellement fourni**, notamment le bytecode des classes citées et les traductions FR/EN. Les paramètres programmés sont identifiés précisément. Aucune partie Minecraft n'a été lancée pour mesurer les combats ni tester la compatibilité de la monture sur les cinq implémentations du bundle.
 
-Le dossier `TESTS_VERSION_0_27_10.md` n'est **pas nécessaire** à l'usage de ce wiki ; les explications utiles se trouvent directement dans ces pages destinées aux joueurs.
+Les explications essentielles sont intégrées directement dans ces pages destinées aux joueurs.
