@@ -114,6 +114,16 @@ def main():
     page=page.replace('Le guide d’élevage reste visible pendant la recherche.','La recherche filtre les fiches des recettes, objets et nouveautés.',1)
     page=page.replace('<section id="installation" class="guide"><h2>Installation et périmètre</h2>','<section id="installation" class="guide"><h2>Installation et périmètre</h2><aside class="notice">Le chapitre historique ci-dessous concerne le JAR 0.27.1/26.2. Pour la version 0.27.10-candidate, voir <a href="#versions-02710">la compatibilité actuelle (26.1 à 26.3)</a>.</aside>',1)
     assert page.count('id="nouveautes"')==1 and page.count('id="raids-02710"')==1
+
+    # Le site GitHub Pages est régénéré à chaque push : ne jamais perdre le guide actuel.
+    fragment_02712=(ROOT/'tools'/'wiki_02712_fragment.html').read_text(encoding='utf-8')
+    assert '<main>' in page and 'dernier-jar-02712' in fragment_02712
+    page=page.replace('<main>','<main>'+fragment_02712,1)
+    page=page.replace('Wiki · 0.27.10-candidate','Wiki · 0.27.12-candidate',1)
+    page=page.replace('<nav class="toc" aria-label="Sommaire de la page">','<nav class="toc" aria-label="Sommaire de la page"><a href="maj-0-27-12.html">0.27.12 : nouveautés</a><a href="recettes-0-27-12.html">32 recettes</a><a href="blocs-0-27-12.html">Ossements et nasse</a>',1)
+    page=page.replace('<b>29 + 2</b> recettes : 29 illustrées, 2 forges nouvelles','<b>29 + 2</b> recettes historiques 0.27.10 (32 dans la 0.27.12)',1)
+    page=page.replace('Le chapitre historique ci-dessous concerne le JAR 0.27.1/26.2. Pour la version 0.27.10-candidate, voir <a href="#versions-02710">la compatibilité actuelle (26.1 à 26.3)</a>.','Chapitres historiques issus des JAR 0.27.1 et 0.27.10. Pour les spécificités actuelles du paquet 0.27.12-candidate, consultez <a href="maj-0-27-12.html">le guide 0.27.12</a>.',1)
+    page=page.replace('Dragons et bastions · Minecraft Java 26.1–26.3 · Guides 0.27.10 et archives 0.27.1.','Dragons et Bastions · Version auditee 0.27.12-candidate · Archives 0.27.10 / 0.27.1.',1)
     (SITE/'index.html').write_text(page,encoding='utf-8')
     assert len(report['recipes'])==29 and len(list((OUT/'crafts').glob('*.png')))==29
     report['crafting_count']=24;report['smithing_count']=5

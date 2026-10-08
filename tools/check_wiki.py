@@ -81,7 +81,7 @@ def main():
             if parts.fragment and target in pages and unquote(parts.fragment) not in pages[target].ids:
                 raise ValueError(f"Ancre manquante : {path.relative_to(ROOT)}: {link}")
             links += 1
-    # Vérifier que le générateur n'efface pas les nouveautés 0.27.10.
+    # Vérifier que le générateur conserve les anciennes nouveautés ET la documentation 0.27.12.
     accueil = pages.get((ROOT / "index.html").resolve())
     if accueil is None:
         raise ValueError("La page d'accueil manque")
@@ -90,6 +90,11 @@ def main():
                    "raids-02710", "versions-02710"):
         if anchor not in accueil.ids:
             raise ValueError(f"Chapitre 0.27.10 absent après génération : {anchor}")
+    if "dernier-jar-02712" not in accueil.ids:
+        raise ValueError("Bandeau 0.27.12 absent du site reconstruit")
+    for current in ("maj-0-27-12.html", "recettes-0-27-12.html", "blocs-0-27-12.html"):
+        if not (ROOT/current).is_file():
+            raise ValueError("Page 0.27.12 absente : "+current)
     standalone_pngs = 0
     for png in ROOT.rglob("*.png"):
         verify_png(png.read_bytes(), png.relative_to(ROOT))
