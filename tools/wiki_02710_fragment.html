@@ -1,0 +1,79 @@
+
+<section id="nouveautes" class="v27-section" aria-labelledby="titre-nouveautes">
+<p class="eyebrow">VERSION 0.27.10-CANDIDATE · MINECRAFT 26.1 À 26.3</p>
+<h2 id="titre-nouveautes">Nouveautés : le dragon noir, les cœurs, les tanières et les raids</h2>
+<p>Ce contenu provient du <strong>JAR 0.27.10-candidate</strong>. Les 29 recettes illustrées précédentes sont conservées ; la nouvelle version comporte <strong>31 recettes JSON, dont deux améliorations spéciales à la forge</strong>. Les images ci-dessous sont les textures originales de cette version, et non des images inventées.</p>
+<div class="v27-grid">
+<article class="v27-card searchable"><img src="generated/icons/black_dragon_egg_0.png" alt="Texture réelle de l’œuf du dragon noir" loading="lazy" width="96" height="96"><h3>Dragon noir corrompu</h3><p>Quatrième dragon avec œuf d'incubation et œuf d'apparition distincts, comportements de faction corrompue et cœur noir.</p><a href="#oeufs-02710">Œuf et variantes →</a></article>
+<article class="v27-card searchable"><img src="generated/icons/frozen_dragon_heart.png" alt="Texture réelle du cœur de dragon gelé" loading="lazy" width="96" height="96"><h3>Cœur de dragon gelé</h3><p>Amélioration d'armure à la table de forge en deux paliers. Le second exige un historique d'amélioration particulier.</p><a href="#coeurs-02710">Forge et coûts →</a></article>
+<article class="v27-card searchable"><img src="generated/icons/black_dragon_heart.png" alt="Texture réelle du cœur de dragon noir" loading="lazy" width="96" height="96"><h3>Cœur de dragon noir</h3><p>Pour armes, outils et armures diamant/netherite : vol de vie, défense et fonte de minerai selon l'objet.</p><a href="#coeurs-02710">Équipements compatibles →</a></article>
+<article class="v27-card searchable"><img src="generated/icons/draconic_omen_5.png" alt="Texture réelle du mauvais présage draconique de niveau V" loading="lazy" width="96" height="96"><h3>Raids draconiques I–V</h3><p>Cinq niveaux de mauvais présage, vagues de dragons, chasseurs illageois et progression Héros légendaire.</p><a href="#raids-02710">Raids et récompenses →</a></article>
+</div>
+</section>
+<section id="oeufs-02710" class="v27-section">
+<p class="eyebrow">ŒUFS ET CRÉATURES</p><h2>Le quatrième dragon : noir et corrompu</h2>
+<p>La version 0.27.10 enregistre les dragons <code>ballista:red_dragon</code>, <code>ballista:green_dragon</code>, <code>ballista:blue_dragon</code> et <code>ballista:black_dragon</code>. Le dragon <strong>bleu</strong> laisse un <strong>cœur gelé</strong>, le <strong>noir</strong> un <strong>cœur noir</strong>, et les rouges/verts le <strong>cœur classique</strong> lorsqu'un cœur est généré. Un dragon nouveau-né ne suit pas le même butin qu'un adulte.</p>
+<div class="v27-eggs" aria-label="Stades visuels de l'œuf noir">
+<figure><img src="generated/icons/black_dragon_egg_0.png" alt="Œuf noir : premier aspect" width="96" height="96" loading="lazy"><figcaption>Œuf noir — aspect 0</figcaption></figure>
+<figure><img src="generated/icons/black_dragon_egg_1.png" alt="Œuf noir : second aspect" width="96" height="96" loading="lazy"><figcaption>Œuf noir — aspect 1</figcaption></figure>
+<figure><img src="generated/icons/black_dragon_egg_2.png" alt="Œuf noir : troisième aspect" width="96" height="96" loading="lazy"><figcaption>Œuf noir — aspect 2</figcaption></figure>
+<figure><img src="generated/icons/black_dragon_spawn_egg.png" alt="Œuf d'apparition du dragon noir" width="96" height="96" loading="lazy"><figcaption>Œuf d'apparition : objet différent</figcaption></figure>
+</div>
+<p><strong>Attention :</strong> les trois images d'œuf représentent les textures des stades du bloc, pas trois objets différents. Les règles d'hostilité du dragon noir corrompu sont particulières ; ne pas supposer qu'un dragon noir sauvage est automatiquement une monture apprivoisée.</p>
+</section>
+<section id="coeurs-02710" class="v27-section">
+<p class="eyebrow">NOUVELLES RECETTES À LA FORGE</p><h2>Cœurs noir et gelé : composants, paliers et effets</h2>
+<div class="v27-forge-grid">
+<article class="v27-forge searchable" id="coeur-gele-02710"><h3><img src="generated/icons/frozen_dragon_heart.png" alt="" width="46" height="46"> Cœur de dragon gelé</h3>
+<div class="v27-forge-line"><span>Emplacement de modèle <b>vide</b></span><span>+</span><span>Base : <code>#minecraft:enchantable/armor</code></span><span>+</span><img src="generated/icons/frozen_dragon_heart.png" alt="Cœur gelé dans l'emplacement d'ajout" width="56" height="56"></div>
+<p>Le code exige une armure admissible. <strong>Premier palier : 4 niveaux</strong> ; <strong>second : 12 niveaux</strong>, uniquement après application précédente et passage diamant → netherite conservant le marqueur de progression. Les pièces non admissibles ne produisent pas de résultat.</p>
+<p class="small">Type de recette : <code>ballista:frozen_dragon_heart</code>. La forge ne demande <strong>aucun modèle de forge</strong> dans ce système personnalisé.</p></article>
+<article class="v27-forge searchable" id="coeur-noir-02710"><h3><img src="generated/icons/black_dragon_heart.png" alt="" width="46" height="46"> Cœur de dragon noir</h3>
+<div class="v27-forge-line"><span>Emplacement de modèle <b>vide</b></span><span>+</span><span>Base : <code>#ballista:black_heart_equipment</code></span><span>+</span><img src="generated/icons/black_dragon_heart.png" alt="Cœur noir dans l'emplacement d'ajout" width="56" height="56"></div>
+<p>Compatible avec <strong>18 objets</strong> : épée, hache, pioche, pelle, houe et 4 pièces d'armure, chacun en <strong>diamant</strong> ou <strong>netherite</strong>. Progression en <strong>stades I et II</strong> ; pour le stade II, la netherite doit conserver la trace du stade I réalisé sur diamant.</p>
+<p class="small">Type de recette : <code>ballista:black_dragon_heart</code>. Le résultat reprend l'objet de base avec ses nouvelles propriétés.</p></article>
+</div>
+<h3>Comment profiter du cœur noir ?</h3>
+<div class="table-scroll"><table><thead><tr><th>Équipement</th><th>Effet lu dans le code</th><th>Limite</th></tr></thead><tbody>
+<tr><td>Armure</td><td>Réduction supplémentaire de dégâts : 5 % par stade équipé comptabilisé</td><td>Somme plafonnée à 8 stades, soit au plus 40 % dans cette fonction</td></tr>
+<tr><td>Armes</td><td>Vol de vie jusqu'à 10 % (stade I) ou 20 % (stade II) des dégâts effectivement subis par la cible</td><td>Calcul conditionné à un coup valable et aux PV effectivement perdus</td></tr>
+<tr><td>Pioche</td><td>Fonction de fonte automatique des butins admissibles</td><td>Maintenir la pioche en main, s'accroupir et utiliser pour activer/désactiver la fonte</td></tr>
+</tbody></table></div>
+<p>La fonte tient compte du type de bloc et des protections contre les doubles récompenses. Les autres outils peuvent recevoir le cœur noir, mais cela <strong>ne signifie pas</strong> qu'ils déclenchent tous la fonte automatique d'une pioche.</p>
+</section>
+<section id="ponte-02710" class="v27-section">
+<p class="eyebrow">FAMILLES DE DRAGONS</p><h2>Ponte, parenté et croissance</h2>
+<div class="v27-facts"><div><strong>48 000 ticks</strong><span>Incubation de l'œuf (40 min si 20 ticks/s)</span></div><div><strong>36 000 ticks</strong><span>Intervalle de ponte du dragon adulte sauvage (30 min)</span></div><div><strong>144 000 ticks</strong><span>Intervalle de ponte du dragon adulte apprivoisé (2 h)</span></div></div>
+<p>L'<strong>incubation</strong>, les deux phases de <strong>croissance</strong> et la <strong>ponte d'un dragon adulte</strong> sont trois mécanismes distincts. Le jeune dragon demande toujours nourriture et espace pour grandir ; l'adulte ne pond que si les conditions de la zone, de ses ordres et de la remise de l'œuf sont remplies. Les compteurs avancent pendant la simulation du monde chargé.</p>
+<p>Les nouvelles interfaces donnent des informations sur le <strong>propriétaire</strong>, le <strong>parent</strong>, l'<strong>ordre</strong>, la <strong>tanière</strong> et le <strong>délai avant la prochaine ponte</strong>. Une information séparée affiche la chaleur et la progression de l'œuf.</p>
+<p class="small">Sources compilées : <code>DragonLifeRules</code>, <code>EggCycle</code>, <code>EggRules</code>, <code>FamilyRules</code> et <code>DragonInformation</code>.</p>
+</section>
+<section id="tanieres-02710" class="v27-section">
+<p class="eyebrow">EXPLORATION ET CONSTRUCTION</p><h2>Antres, tanières et grandes cavernes</h2>
+<p>Le monde utilise des structures dédiées aux <strong>antres de montagne rouges, verts et bleus</strong>, aux <strong>grandes cavernes de dragon</strong> et aux <strong>tanières de pillards</strong>. L'apparition dépend des biomes, du terrain, des chunks générés et des règles de placement.</p>
+<div class="table-scroll"><table><thead><tr><th>Structure</th><th>Espacement / séparation de la grille</th><th>À savoir</th></tr></thead><tbody><tr><td>Antres de montagne</td><td>28 / 8</td><td>Trois couleurs et variantes de relief</td></tr><tr><td>Grande caverne</td><td>40 / 12</td><td>Butin de gemmes et reliques</td></tr><tr><td>Tanière de pillards</td><td>28 / 8</td><td>Camps, coffres et ennemis illageois</td></tr></tbody></table></div>
+<p>Un dragon domestiqué peut recevoir les ordres <strong>« Aménager une tanière »</strong> et <strong>« Retourner à la tanière »</strong>. L'aperçu ajuste la rotation au clic et la hauteur à la molette, puis valide ou annule le projet. La construction peut être refusée si le terrain est inadapté ou si des installations doivent être protégées.</p>
+<p class="small">L'espacement indiqué est une valeur de génération Minecraft, pas une promesse de trouver la structure à cette distance exacte. Explorer des chunks inédits est généralement nécessaire.</p>
+</section>
+<section id="pillards-02710" class="v27-section">
+<p class="eyebrow">ENNEMIS ET CAMPAGNES</p><h2>Chasseurs illageois et camps de pillards</h2>
+<p>Une nouvelle entité <code>ballista:illager_dragon_hunter</code> accompagne les mécanismes d'hostilité, d'alarme et de protection des camps. Ce <strong>chasseur illageois</strong> est distinct du marchand villageois <strong>chasseur de dragons</strong> documenté dans la partie historique. Les coffres de tanières de pillards ont leurs propres tables de butin : aucun objet précis n'est garanti à chaque coffre.</p>
+</section>
+<section id="raids-02710" class="v27-section">
+<p class="eyebrow">ÉVÉNEMENT DE COMBAT</p><h2>Mauvais présage draconique et raids I à V</h2>
+<div class="v27-omen-gallery" aria-label="Textures des cinq objets de mauvais présage draconique">
+<figure><img src="generated/icons/draconic_omen_1.png" alt="Mauvais présage draconique I" width="80" height="80" loading="lazy"><figcaption>Niveau I</figcaption></figure>
+<figure><img src="generated/icons/draconic_omen_2.png" alt="Mauvais présage draconique II" width="80" height="80" loading="lazy"><figcaption>Niveau II</figcaption></figure>
+<figure><img src="generated/icons/draconic_omen_3.png" alt="Mauvais présage draconique III" width="80" height="80" loading="lazy"><figcaption>Niveau III</figcaption></figure>
+<figure><img src="generated/icons/draconic_omen_4.png" alt="Mauvais présage draconique IV" width="80" height="80" loading="lazy"><figcaption>Niveau IV</figcaption></figure>
+<figure><img src="generated/icons/draconic_omen_5.png" alt="Mauvais présage draconique V" width="80" height="80" loading="lazy"><figcaption>Niveau V</figcaption></figure>
+</div>
+<div class="table-scroll"><table><thead><tr><th>Présage</th><th>Dragons définis par vague</th><th>Variante</th></tr></thead><tbody><tr><td>I</td><td>1</td><td>Adolescent possible</td></tr><tr><td>II</td><td>1</td><td>Adolescent possible</td></tr><tr><td>III</td><td>1</td><td>Cavalier illageois possible</td></tr><tr><td>IV</td><td>3</td><td>Cavalier illageois possible</td></tr><tr><td>V</td><td>3</td><td>Cavalier illageois possible</td></tr></tbody></table></div>
+<p>La potion de présage déclenche les règles de raid ; les vagues utilisent les dragons disponibles, l'état du raid et une barre de progression. Les succès <strong>Héros légendaire I à V</strong> sont reliés à la victoire et à des récompenses de type <strong>Héros du village</strong>. Le nombre affiché est la configuration des vagues dans le code et non une garantie de génération sans obstacle.</p>
+</section>
+<section id="versions-02710" class="v27-section">
+<h2>Installation et état des vérifications</h2>
+<p><strong>Mod Java Fabric</strong> pour Minecraft 26.1, 26.1.1, 26.1.2, 26.2 et 26.3 : installer le JAR universel extérieur, Java 25 ou plus, Fabric Loader 0.19.3 minimum et Fabric API. Il ne s'agit ni d'un addon Bedrock, ni d'une version Forge/NeoForge.</p>
+<p><strong>Vérifiés hors jeu :</strong> manifestes Fabric, contenu des ressources, 31 recettes, 25 tables de butin et méthodes compilées sélectionnées des cinq versions. <strong>Non vérifiés dans Minecraft :</strong> stabilité client/serveur sur toutes ces versions, gameplay complet en multijoueur, interactions avec d'autres mods, taux réels de génération, raids en partie et validation des nouvelles améliorations à la forge.</p>
+<p>Le site conserve les illustrations historiques de la 0.27.1 en distinguant leur provenance. Voir aussi <a href="maj-0-27-10.html">la page dédiée 0.27.10</a> et <a href="https://github.com/ldjo86/Dragons-et-bastions/blob/main/GUIDE_VERSION_0_27_10.md">les références techniques du JAR</a>.</p>
+</section>

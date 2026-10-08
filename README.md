@@ -8,6 +8,30 @@
 
 **Nouveautés 0.27.10 :** dragon noir, cœur noir, cœur gelé, ponte familiale, tanières aménagées, camps illageois et raids draconiques I à V. Consultez [le guide actualisé](GUIDE_VERSION_0_27_10.md) pour les mécanismes et conditions tirés du bytecode de la nouvelle version.
 
+
+## Nouveautés : version **0.27.10-candidate** (Minecraft Java 26.1 à 26.3)
+
+La nouvelle version contient quatre dragons (rouge, vert, bleu et **noir**), la ponte et le suivi familial, des tanières à aménager, des camps de pillards avec chasseurs illageois, **cinq niveaux de raids draconiques** et deux nouvelles recettes de forge. **Les 29 recettes illustrées ci-dessous restent celles du JAR historique 0.27.1 ; le JAR 0.27.10 contient 31 recettes.**
+
+| Objet ajouté | Texture tirée du JAR | Mécanisme principal |
+|---|---|---|
+| Cœur de dragon gelé | ![Cœur gelé](site/generated/icons/frozen_dragon_heart.png) | Forge d'armures : premier palier 4 niveaux ; second 12 niveaux avec historique diamant → netherite |
+| Cœur de dragon noir | ![Cœur noir](site/generated/icons/black_dragon_heart.png) | Forge : épée, hache, pioche, pelle, houe ou pièce d'armure en diamant/netherite ; stades I et II |
+| Œuf noir | ![Œuf noir](site/generated/icons/black_dragon_egg_0.png) | Quatrième dragon et œuf incubable ; modèle différent de son œuf d'apparition |
+| Présage draconique V | ![Présage V](site/generated/icons/draconic_omen_5.png) | Raids draconiques de niveaux I à V et défis Héros légendaire |
+
+**Cœurs :** la pioche portant un cœur noir peut activer/désactiver la fonte automatique par interaction accroupie. L'armure noire accorde 5 % de réduction supplémentaire par stade équipé dans la fonction du mod (maximum théorique 40 %) ; le vol de vie des armes est de 10 % au stade I et 20 % au stade II des dégâts effectivement perdus par la cible.
+
+**Ponte :** incubation 48 000 ticks (40 min), ponte d'un adulte sauvage toutes les 36 000 ticks (30 min de simulation) et ponte d'un adulte domestiqué toutes les 144 000 ticks (2 h), sous réserve des conditions de position, de propriété, d'ordre et de zone libre. Le jeune doit également passer les deux étapes de croissance nourries.
+
+**Exploration :** structures d'antres montagneux, grandes cavernes et tanières de pillards, génération dépendant du monde. Les raids draconiques ajoutent des présages I–V et les défis Héros légendaire I–V. Le nouvel ordre « Aménager une tanière » permet au dragon domestiqué de préparer un site valide.
+
+**Documentation actualisée :** [site avec nouveaux chapitres, images et tables](https://ldjo86.github.io/Dragons-et-bastions/#nouveautes) · [guide technique détaillé de la 0.27.10](GUIDE_VERSION_0_27_10.md) · [page de nouveautés](site/maj-0-27-10.html).
+
+**Niveau de validation :** contenu des JAR et code compilé inspectés ; le fonctionnement client/serveur en jeu n'a pas encore été testé.
+
+---
+
 ## Sommaire
 
 [Commencer](#commencer) · [Balistes](#balistes) · [Tables d'archerie](#tables) · [Pieux](#pieux) · [Réparations](#reparations) · [Chasseur et commerce](#chasseur) · [Œufs et élevage](#elevage) · [Équipement du dragon](#equipement) · [Ordres et vol](#commandes) · [Armure en écailles](#ecailles) · [Cœur de dragon](#coeur) · [Antres et villages](#monde) · [Menaces nocturnes](#nuit) · [Réglages du monde](#reglages) · [Installation](#installation)
