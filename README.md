@@ -1,6 +1,6 @@
 # Dragons et bastions — Wiki officiel
 
-**Construire ses défenses, découvrir les antres, élever un dragon et améliorer son équipement.** Ce guide rassemble les explications et les **29 recettes illustrées directement dans le README**, avec les ingrédients à gauche et le résultat à droite.
+**Construire ses défenses, découvrir les antres, élever un dragon et améliorer son équipement.** Ce guide rassemble les explications de la version 0.27.10 et les **29 recettes historiques illustrées directement dans le README**, avec les ingrédients à gauche et le résultat à droite.
 
 **Documentation historique : 0.27.1 pour Minecraft Java 26.2, avec Fabric.** La dernière archive transmise, **0.27.10-candidate pour Minecraft Java 26.1 à 26.3**, est documentée séparément dans **[le guide des nouveautés 0.27.10](GUIDE_VERSION_0_27_10.md)**. Les chiffres et recettes ci-dessous concernent la version historique sauf indication contraire. Le mod porte encore le nom « Baliste » dans sa fiche de chargement. Les règles décrites sont celles du JAR fourni par l'auteur, sans datapack modifiant ses recettes. Les durées supposent un serveur à 20 ticks par seconde : 20 ticks = 1 seconde.
 
@@ -12,6 +12,38 @@
 ## Nouveautés : version **0.27.10-candidate** (Minecraft Java 26.1 à 26.3)
 
 La nouvelle version contient quatre dragons (rouge, vert, bleu et **noir**), la ponte et le suivi familial, des tanières à aménager, des camps de pillards avec chasseurs illageois, **cinq niveaux de raids draconiques** et deux nouvelles recettes de forge. **Les 29 recettes illustrées ci-dessous restent celles du JAR historique 0.27.1 ; le JAR 0.27.10 contient 31 recettes.**
+
+### Dragon noir : un adversaire accompagné d'un chasseur monté
+
+![Œuf noir](site/generated/icons/black_dragon_egg_0.png) ![Cœur noir](site/generated/icons/black_dragon_heart.png)
+
+Le **dragon noir corrompu** (`ballista:black_dragon`) est la **quatrième couleur** de dragon. Il est allié aux **illageois et autres dragons noirs**. Il possède son œuf incubable, son œuf d'apparition et son cœur noir spécifique. Les attributs de base du dragon sont **24 PV et 3 dégâts** nouveau-né, **60 PV et 7 dégâts** adolescent, **120 PV et 12 dégâts** adulte.
+
+**Pendant le renfort draconique de fin de raid des niveaux III, IV et V**, le jeu prévoit un **chasseur de dragons illageois monté sur le premier dragon noir adulte**. Le code ne se contente pas de faire apparaître deux entités proches : il équipe le dragon d'une selle et appelle `startRiding` pour installer le chasseur dessus.
+
+Le **chasseur illageois** (`ballista:illager_dragon_hunter`) a **60 PV**, une **armure complète en diamant** et un **bâton draconique**. Il tire des **boules de feu** sur une cible visible entre environ **3 et 24 blocs**, avec **60 ticks** entre les tirs valides. Le dragon conserve sa propre IA ; pendant le raid, sa cible est transmise au cavalier. Le code de butin du chasseur prévoit **un cœur noir**, et parfois une à deux cartes de tanières illageoises si les structures appropriées sont trouvées.
+
+[**Lire le guide détaillé du dragon noir et de son cavalier**](DRAGON_NOIR_ET_RAIDS.md#1-le-dragon-noir--un-quatrième-dragon-allié-des-illageois) · [**Voir la page illustrée du dragon noir**](site/dragon-noir.html).
+
+### Les cinq fioles de mauvais présage draconique : effets et dragons
+
+Les fioles **`ballista:draconic_omen_1` à `ballista:draconic_omen_5`** se **boivent** pendant **32 ticks** (environ 1,6 s). Elles remplacent l'ancien Mauvais présage et appliquent **Mauvais présage I à V** pendant **120 000 ticks (100 minutes)**. Une bouteille vide est rendue. Il ne s'agit pas de cinq effets élémentaires distincts : c'est la **puissance du présage** et la composition du raid qui changent.
+
+**IMPORTANT : les dragons arrivent en renfort à la DERNIÈRE vague du raid**, et non à chaque vague. Leur apparition dépend des emplacements disponibles.
+
+| Fiole (textures réelles du mod) | Renfort draconique final | Chasseur illageois monté | Récompense maximale |
+|---|---|---|---|
+| ![I](site/generated/icons/draconic_omen_1.png) **I** | 1 dragon noir **adolescent** | Non | Héros légendaire I |
+| ![II](site/generated/icons/draconic_omen_2.png) **II** | 1 dragon noir **adolescent** | Non | Héros légendaire II |
+| ![III](site/generated/icons/draconic_omen_3.png) **III** | 1 dragon noir **adulte** | **Oui** | Héros légendaire III |
+| ![IV](site/generated/icons/draconic_omen_4.png) **IV** | 3 dragons noirs **adultes** | **Oui, sur le premier uniquement** | Héros légendaire IV |
+| ![V](site/generated/icons/draconic_omen_5.png) **V** | 3 dragons noirs **adultes** | **Oui, sur le premier uniquement** | Héros légendaire V |
+
+Après la victoire du raid et la mort de **tous les dragons du renfort**, le mod attribue les **avancements Héros légendaire** jusqu'au meilleur rang atteint et conserve un bonus **Héros du village** de niveau correspondant, appliqué avec une **durée infinie** et restauré depuis les données du joueur.
+
+Les cinq fioles existent dans le registre du mod et ont leurs textures propres, mais **aucune recette de craft** n'a été identifiée pour elles parmi les 31 recettes du JAR. La différence entre les niveaux IV et V ne réside **pas** dans un quatrième dragon : elle concerne surtout le rang du raid et sa récompense.
+
+[**Guide complet des fioles, des effets et des récompenses**](DRAGON_NOIR_ET_RAIDS.md#3-les-cinq-fioles-de-mauvais-présage-draconique) · [**Page illustrée des cinq fioles**](site/raids-draconiques.html).
 
 | Objet ajouté | Texture tirée du JAR | Mécanisme principal |
 |---|---|---|
@@ -28,7 +60,6 @@ La nouvelle version contient quatre dragons (rouge, vert, bleu et **noir**), la 
 
 **Documentation actualisée :** [site avec nouveaux chapitres, images et tables](https://ldjo86.github.io/Dragons-et-bastions/#nouveautes) · [guide technique détaillé de la 0.27.10](GUIDE_VERSION_0_27_10.md) · [page de nouveautés](site/maj-0-27-10.html).
 
-**Plan de tests pour chaque version Minecraft :** [matrice de validation 0.27.10](TESTS_VERSION_0_27_10.md) (25 scénarios reproductibles, résultats à renseigner).
 
 **Niveau de validation :** contenu des JAR et code compilé inspectés ; le fonctionnement client/serveur en jeu n'a pas encore été testé.
 
