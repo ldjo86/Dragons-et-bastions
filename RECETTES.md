@@ -1,6 +1,6 @@
 # Recettes
 
-Le JAR contient **29 recettes**. Les fabrications classiques sont représentées comme dans une table de craft 3×3. Les recettes sans forme sont indiquées séparément.
+La version historique **0.27.1 contient 29 recettes**, illustrées ci-dessous. Le nouveau JAR **0.27.10-candidate en contient 31**, dont deux recettes de forge spéciales supplémentaires : **cœur de dragon noir** (`ballista:black_dragon_heart` sur `#ballista:black_heart_equipment`) et **cœur de dragon gelé** (`ballista:frozen_dragon_heart` sur `#minecraft:enchantable/armor`). Voir [le guide 0.27.10](GUIDE_VERSION_0_27_10.md). Les fabrications classiques sont représentées comme dans une table de craft 3×3. Les recettes sans forme sont indiquées séparément.
 
 ## Balistes
 
