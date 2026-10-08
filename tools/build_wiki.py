@@ -110,6 +110,7 @@ def main():
     page=page.replace('<b>26.2</b> Minecraft Java · Fabric','<b>26.1–26.3</b> Minecraft Java · Fabric (candidate)',1)
     page=page.replace('<b>29</b> recettes illustrées','<b>29 + 2</b> recettes : 29 illustrées, 2 forges nouvelles',1)
     page=page.replace('<a href="#elevage">Élevage du dragon</a>','<a href="#nouveautes">Nouveautés 0.27.10</a><a href="#elevage">Élevage du dragon</a>',1)
+    page=page.replace('<a href="#nouveautes">Nouveautés 0.27.10</a>','<a href="#nouveautes">Nouveautés 0.27.10</a><a href="dragon-noir.html">Dragon noir</a><a href="raids-draconiques.html">Fioles et raids</a>',1)
     page=page.replace('Le guide d’élevage reste visible pendant la recherche.','La recherche filtre les fiches des recettes, objets et nouveautés.',1)
     page=page.replace('<section id="installation" class="guide"><h2>Installation et périmètre</h2>','<section id="installation" class="guide"><h2>Installation et périmètre</h2><aside class="notice">Le chapitre historique ci-dessous concerne le JAR 0.27.1/26.2. Pour la version 0.27.10-candidate, voir <a href="#versions-02710">la compatibilité actuelle (26.1 à 26.3)</a>.</aside>',1)
     assert page.count('id="nouveautes"')==1 and page.count('id="raids-02710"')==1
