@@ -2,9 +2,11 @@
 
 **Construire ses défenses, découvrir les antres, élever un dragon et améliorer son équipement.** Ce guide rassemble les explications et les **29 recettes illustrées directement dans le README**, avec les ingrédients à gauche et le résultat à droite.
 
-**Version documentée : 0.27.1 pour Minecraft Java 26.2, avec Fabric.** Le mod porte encore le nom « Baliste » dans sa fiche de chargement. Les règles décrites sont celles du JAR fourni par l'auteur, sans datapack modifiant ses recettes. Les durées supposent un serveur à 20 ticks par seconde : 20 ticks = 1 seconde.
+**Documentation historique : 0.27.1 pour Minecraft Java 26.2, avec Fabric.** La dernière archive transmise, **0.27.10-candidate pour Minecraft Java 26.1 à 26.3**, est documentée séparément dans **[le guide des nouveautés 0.27.10](GUIDE_VERSION_0_27_10.md)**. Les chiffres et recettes ci-dessous concernent la version historique sauf indication contraire. Le mod porte encore le nom « Baliste » dans sa fiche de chargement. Les règles décrites sont celles du JAR fourni par l'auteur, sans datapack modifiant ses recettes. Les durées supposent un serveur à 20 ticks par seconde : 20 ticks = 1 seconde.
 
 > Les recettes et les mécanismes ont été vérifiés dans les ressources et le code du mod. Les illustrations utilisent les textures et les modèles réels, rendus hors du jeu ; elles ne sont pas des captures de Minecraft. Cette vérification ne constitue pas un test en jeu de toutes les interactions.
+
+**Nouveautés 0.27.10 :** dragon noir, cœur noir, cœur gelé, ponte familiale, tanières aménagées, camps illageois et raids draconiques I à V. Consultez [le guide actualisé](GUIDE_VERSION_0_27_10.md) pour les mécanismes et conditions tirés du bytecode de la nouvelle version.
 
 ## Sommaire
 
