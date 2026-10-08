@@ -1,5 +1,7 @@
 # Dragons : de l'œuf à la monture
 
+> **🆕 Wiki 0.27.12-candidate (JAR analysé le 08/10/2026) :** [guide complet](GUIDE_VERSION_0_27_12.md) · [32 recettes](RECETTES_VERSION_0_27_12.md) · [tas d'ossements et nasse](BLOCS_ET_MECANIQUES_0_27_12.md) · [Savoir I–III](ENCHANTEMENT_SAVOIR_0_27_12.md) · [audit technique](ANALYSE_JAR_0_27_12.md). Les explications historiques ci-dessous concernent des JAR plus anciens et ne remplacent pas le guide 0.27.12.
+
 **Guide historique basé sur `ballista-fabric-0.27.1+mc26.2.jar`.** La version 0.27.10 ajoute le dragon noir, la ponte périodique, les tanières domestiques et les raids draconiques. Lire le **[complément 0.27.10](GUIDE_VERSION_0_27_10.md)** avant de se fier aux anciennes descriptions. Ce guide décrit les règles lues dans les ressources et le code compilé de ce fichier, sans modification du mod. Les essais en jeu restent à effectuer. Un datapack ou un autre mod peut modifier les règles et les ingrédients.
 
 ## Le parcours à suivre

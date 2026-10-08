@@ -1,0 +1,42 @@
+{
+  "source_filename": "ballista-fabric-0.27.12-candidate+mc26.1-26.3-test.jar",
+  "source_sha256": "5cb0158c309bd38fad9bfe090bee32eac43ee70996607625dd640f88ec72c284",
+  "validation": "static_only_no_minecraft_runtime",
+  "outer_mod_id": "ballista_bundle",
+  "game_versions": [
+    "26.1",
+    "26.1.1",
+    "26.1.2",
+    "26.2",
+    "26.3"
+  ],
+  "required_java": ">=25",
+  "required_loader": ">=0.19.3",
+  "required_fabric_api": true,
+  "module_counts": {
+    "classes_26_3": 244,
+    "recipes": 32,
+    "advancements": 33,
+    "loot_tables": 28,
+    "nbt": 23,
+    "worldgen": 16,
+    "png": 90
+  },
+  "new_verified_assets": {
+    "bone_pile_model_elements": 82,
+    "fish_trap_model_elements": 45,
+    "bone_pile_dropped_bones": 7,
+    "fish_trap_recipe": "BSB/S S/PPP",
+    "savoir_levels": [
+      1,
+      2,
+      3
+    ]
+  },
+  "source_paths": {
+    "bone_pile": "assets/ballista/models/block/bone_pile.json",
+    "fish_trap": "data/ballista/recipe/fish_trap.json",
+    "savoir": "data/ballista/enchantment/savoir.json"
+  },
+  "notes": "No proof of runtime compatibility; 1.21.x builds not included."
+}

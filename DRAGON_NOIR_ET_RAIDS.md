@@ -1,5 +1,7 @@
 # Dragon noir, chasseur illageois et fioles de mauvais présage draconique
 
+> **🆕 Wiki 0.27.12-candidate (JAR analysé le 08/10/2026) :** [guide complet](GUIDE_VERSION_0_27_12.md) · [32 recettes](RECETTES_VERSION_0_27_12.md) · [tas d'ossements et nasse](BLOCS_ET_MECANIQUES_0_27_12.md) · [Savoir I–III](ENCHANTEMENT_SAVOIR_0_27_12.md) · [audit technique](ANALYSE_JAR_0_27_12.md). Les explications historiques ci-dessous concernent des JAR plus anciens et ne remplacent pas le guide 0.27.12.
+
 **Guide du JAR `ballista-fabric-0.27.10-candidate+mc26.1-26.3-test.jar`**, variante Minecraft 26.3 inspectée le 8 octobre 2026. Les mécanismes ci-dessous sont lus dans les classes et les ressources du mod ; les apparitions effectives restent conditionnées au monde, au chargement des zones et au bon fonctionnement de Minecraft.
 
 [← Accueil du wiki](README.md) · [Guide général 0.27.10](GUIDE_VERSION_0_27_10.md) · [Page illustrée consacrée aux raids](site/raids-draconiques.html) · [Page illustrée du dragon noir](site/dragon-noir.html)

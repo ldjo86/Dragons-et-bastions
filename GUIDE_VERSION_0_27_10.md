@@ -1,5 +1,7 @@
 # Dragons et Bastions — Guide de la version 0.27.10-candidate
 
+> **🆕 Wiki 0.27.12-candidate (JAR analysé le 08/10/2026) :** [guide complet](GUIDE_VERSION_0_27_12.md) · [32 recettes](RECETTES_VERSION_0_27_12.md) · [tas d'ossements et nasse](BLOCS_ET_MECANIQUES_0_27_12.md) · [Savoir I–III](ENCHANTEMENT_SAVOIR_0_27_12.md) · [audit technique](ANALYSE_JAR_0_27_12.md). Les explications historiques ci-dessous concernent des JAR plus anciens et ne remplacent pas le guide 0.27.12.
+
 > **Source vérifiée :** ballista-fabric-0.27.10-candidate+mc26.1-26.3-test.jar, analysé le 8 octobre 2026. Ce guide concerne **Dragons et Bastions / Baliste** (identifiant Fabric *ballista*), **pas Realms Reforged**. Il s'agit d'une **version candidate de test**, pas d'une validation de stabilité en jeu.
 >
 > **Navigation :** [Wiki et recettes illustrées](README.md) · [Dragons : guide historique](DRAGONS.md) · [Recettes](RECETTES.md) · [Inventaire du JAR](CONTENU_DU_JAR.md) · [Version HTML](site/maj-0-27-10.html) · [Dragon noir et fioles](DRAGON_NOIR_ET_RAIDS.md)

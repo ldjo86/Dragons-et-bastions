@@ -1,19 +1,21 @@
-# Inventaire du JAR — mise à jour 0.27.10-candidate
+# Inventaire du JAR — Dragons et Bastions 0.27.12-candidate
 
-**Archive analysée :** `ballista-fabric-0.27.10-candidate+mc26.1-26.3-test.jar` (8 octobre 2026), contenant cinq sous-JAR Fabric.
+> Cette page remplace l'inventaire précédent limité à 0.27.10. Les anciens guides restent accessibles, mais **l'archive la plus récente inspectée ici est 0.27.12-candidate+mc26.1–26.3-test**. Il ne s'agit pas d'un verdict de compatibilité universelle.
 
-| Version Minecraft | Classes Java | Recettes JSON | Tables de butin JSON | Textures PNG |
-|---|---:|---:|---:|---:|
-| 26.1 | 201 | 31 | 25 | 89 |
-| 26.1.1 | 201 | 31 | 25 | 89 |
-| 26.1.2 | 201 | 31 | 25 | 89 |
-| 26.2 | 200 | 31 | 25 | 89 |
-| 26.3 | 202 | 31 | 25 | 89 |
+**Archive inspectée :** `ballista-fabric-0.27.12-candidate+mc26.1-26.3-test.jar` (SHA-256 `5cb0158c309bd38fad9bfe090bee32eac43ee70996607625dd640f88ec72c284`).
 
-Ce sont les fichiers `.class` (y compris classes internes ou générées), et non le nombre de classes métier distinctes. La différence entre versions comprend des adaptations de compatibilité telles que `Outline261` et `World263`. Le manifeste extérieur déclare Java >=25, Fabric Loader >=0.19.3 et Fabric API.
+- **5 JAR intégrés** : 26.1, 26.1.1, 26.1.2, 26.2 et 26.3.
+- **Module 26.3** : 244 classes Java, 90 textures PNG, 32 recettes, 33 avancements, 28 tables de butin, 23 structures NBT, 16 fichiers de worldgen, 160 chaînes de langue par langue.
+- **Entités et systèmes** : balistes légère/moyenne/lourde, dragons rouge/vert/bleu/noir, chasseurs de dragons et illageois, œufs, équipements, tanières, ordre/famille, raids draconiques I–V, invasions nocturnes.
+- **Nouveaux objets/blocs** : tas d'ossements 3D, nasse à poissons (avec interface et appâts), enchantement Savoir I–III, cœurs draconiques et équipement.
+- **Limites connues** : mauvais encodage de deux noms français, divergences des classes selon la version Minecraft, absence de tests en jeu pour cette candidate.
 
-**Familles :** balistes et projectiles spéciaux ; dragons rouge, vert, bleu et noir ; œufs, croissance, reproduction et suivi familial ; cœurs classique, gelé et noir ; armures, renforts et équipement ; tanières naturelles, cavernes de montagne, tanières domestiques ; chasseurs villageois et illageois, camps de pillards ; raids draconiques, présage I–V et défis Héros légendaire ; génération de structures, coffres, cartes, animations et textures.
+### Documentation détaillée
 
-Le bundle contient 31 recettes (29 antérieures + 2 cœurs personnalisés), 25 tables de butin, 32 avancements JSON et 258 JSON au total dans la variante 26.3. Les fichiers de traduction français/anglais comportent des entrées nouvelles pour les interfaces et récompenses. **Aucun test de lancement Minecraft n'a été effectué.**
-
-Voir **[le guide détaillé 0.27.10](GUIDE_VERSION_0_27_10.md)** pour les règles et avertissements, et [le README historique](README.md) pour les illustrations des recettes héritées.
+- [Nouveautés et mécanismes 0.27.12](GUIDE_VERSION_0_27_12.md)
+- [Recettes 32/32](RECETTES_VERSION_0_27_12.md)
+- [Tas d'ossements et nasse](BLOCS_ET_MECANIQUES_0_27_12.md)
+- [Savoir I–III](ENCHANTEMENT_SAVOIR_0_27_12.md)
+- [Toutes les structures et tables de butin](STRUCTURES_BUTIN_0_27_12.md)
+- [Audit et erreurs relevées](ANALYSE_JAR_0_27_12.md)
+- [Guide historique de 0.27.10](GUIDE_VERSION_0_27_10.md)

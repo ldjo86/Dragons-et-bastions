@@ -1,8 +1,22 @@
 # Dragons et bastions — Wiki officiel
 
+## 🆕 Dernier JAR analysé : 0.27.12-candidate
+
+**[Consulter le guide complet 0.27.12](GUIDE_VERSION_0_27_12.md)** · **[32 recettes vérifiées](RECETTES_VERSION_0_27_12.md)** · **[Tas d'ossements et nasse à poissons](BLOCS_ET_MECANIQUES_0_27_12.md)** · **[Savoir I–III](ENCHANTEMENT_SAVOIR_0_27_12.md)** · **[Structures et butins](STRUCTURES_BUTIN_0_27_12.md)** · **[Index des contenus](INDEX_CONTENU_0_27_12.md)** · **[Audit technique](ANALYSE_JAR_0_27_12.md)** · **[English overview](GUIDE_VERSION_0_27_12_EN.md)**
+
+Le JAR **`ballista-fabric-0.27.12-candidate+mc26.1-26.3-test.jar`** contient cinq modules destinés à **Minecraft 26.1, 26.1.1, 26.1.2, 26.2 et 26.3** selon leurs métadonnées Fabric. Il ne permet pas de conclure sur les autres versions historiques de Minecraft, dont 1.21.x. **Version de test non validée en jeu**.
+
+Cette version présente **4 dragons (dont le noir monté par un chasseur illageois), 5 fioles de mauvais présage draconique, 3 balistes, 32 recettes, un tas d'ossements 3D à 82 pièces, une nasse à poissons, Savoir I–III, des tanières, camps et événements nocturnes**. Les pages détaillées distinguent les faits tirés des fichiers et les contrôles qui restent à effectuer en partie.
+
+[🌐 Voir aussi la page HTML 0.27.12](site/maj-0-27-12.html) · [Fabrications 0.27.12](site/recettes-0-27-12.html) · [Nouveaux blocs](site/blocs-0-27-12.html)
+
+---
+
+### Archives : 0.27.1 et 0.27.10
+
 **Construire ses défenses, découvrir les antres, élever un dragon et améliorer son équipement.** Ce guide rassemble les explications de la version 0.27.10 et les **29 recettes historiques illustrées directement dans le README**, avec les ingrédients à gauche et le résultat à droite.
 
-**Documentation historique : 0.27.1 pour Minecraft Java 26.2, avec Fabric.** La dernière archive transmise, **0.27.10-candidate pour Minecraft Java 26.1 à 26.3**, est documentée séparément dans **[le guide des nouveautés 0.27.10](GUIDE_VERSION_0_27_10.md)**. Les chiffres et recettes ci-dessous concernent la version historique sauf indication contraire. Le mod porte encore le nom « Baliste » dans sa fiche de chargement. Les règles décrites sont celles du JAR fourni par l'auteur, sans datapack modifiant ses recettes. Les durées supposent un serveur à 20 ticks par seconde : 20 ticks = 1 seconde.
+**Documentation historique : 0.27.1 pour Minecraft Java 26.2, avec Fabric.** L'archive précédente, **0.27.10-candidate pour Minecraft Java 26.1 à 26.3**, est documentée séparément dans **[le guide des nouveautés 0.27.10](GUIDE_VERSION_0_27_10.md)**. Les chiffres et recettes ci-dessous concernent la version historique sauf indication contraire. Le mod porte encore le nom « Baliste » dans sa fiche de chargement. Les règles décrites sont celles du JAR fourni par l'auteur, sans datapack modifiant ses recettes. Les durées supposent un serveur à 20 ticks par seconde : 20 ticks = 1 seconde.
 
 > Les recettes et les mécanismes ont été vérifiés dans les ressources et le code du mod. Les illustrations utilisent les textures et les modèles réels, rendus hors du jeu ; elles ne sont pas des captures de Minecraft. Cette vérification ne constitue pas un test en jeu de toutes les interactions.
 
