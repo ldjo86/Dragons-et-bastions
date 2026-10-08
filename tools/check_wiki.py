@@ -81,6 +81,19 @@ def main():
             if parts.fragment and target in pages and unquote(parts.fragment) not in pages[target].ids:
                 raise ValueError(f"Ancre manquante : {path.relative_to(ROOT)}: {link}")
             links += 1
+    # Vérifier que le générateur n'efface pas les nouveautés 0.27.10.
+    accueil = pages.get((ROOT / "index.html").resolve())
+    if accueil is None:
+        raise ValueError("La page d'accueil manque")
+    for anchor in ("nouveautes", "oeufs-02710", "coeurs-02710",
+                   "ponte-02710", "tanieres-02710", "pillards-02710",
+                   "raids-02710", "versions-02710"):
+        if anchor not in accueil.ids:
+            raise ValueError(f"Chapitre 0.27.10 absent après génération : {anchor}")
+    standalone_pngs = 0
+    for png in ROOT.rglob("*.png"):
+        verify_png(png.read_bytes(), png.relative_to(ROOT))
+        standalone_pngs += 1
     svg_count = 0
     png_count = 0
     for path in ROOT.rglob("*.svg"):
@@ -94,7 +107,7 @@ def main():
                 raw = base64.b64decode(encoded, validate=True)
                 verify_png(raw, path.relative_to(ROOT))
                 png_count += 1
-    print(f"OK : {len(pages)} pages HTML ; {links} liens locaux et ancres ; {svg_count} SVG ; {png_count} PNG intégrés.")
+    print(f"OK : {len(pages)} pages HTML ; {links} liens locaux et ancres ; {svg_count} SVG ; {png_count} PNG intégrés ; {standalone_pngs} PNG autonomes validés.")
     print("Non vérifiés ici : URLs externes, rendu dans un navigateur, comportement du mod en jeu et activation de GitHub Pages.")
 
 
