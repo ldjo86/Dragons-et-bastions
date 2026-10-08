@@ -11,7 +11,7 @@
 </div>
 </section>
 <section id="oeufs-02710" class="v27-section">
-<p class="eyebrow">ŒUFS ET CRÉATURES</p><h2>Le quatrième dragon : noir et corrompu</h2>
+<p class="eyebrow">ŒUFS ET CRÉATURES</p><h2>Le quatrième dragon : noir et corrompu</h2><p><strong>En raid draconique III à V, un chasseur de dragons illageois est réellement monté sur le premier dragon noir adulte.</strong> Le mod utilise une selle et le mécanisme <code>startRiding</code>. Consultez le <a href="dragon-noir.html">guide du dragon noir</a> et le <a href="raids-draconiques.html">guide des fioles I–V</a> pour ses attaques, l'équipement du cavalier, les récompenses et la composition exacte des renforts.</p>
 <p>La version 0.27.10 enregistre les dragons <code>ballista:red_dragon</code>, <code>ballista:green_dragon</code>, <code>ballista:blue_dragon</code> et <code>ballista:black_dragon</code>. Le dragon <strong>bleu</strong> laisse un <strong>cœur gelé</strong>, le <strong>noir</strong> un <strong>cœur noir</strong>, et les rouges/verts le <strong>cœur classique</strong> lorsqu'un cœur est généré. Un dragon nouveau-né ne suit pas le même butin qu'un adulte.</p>
 <div class="v27-eggs" aria-label="Stades visuels de l'œuf noir">
 <figure><img src="generated/icons/black_dragon_egg_0.png" alt="Œuf noir : premier aspect" width="96" height="96" loading="lazy"><figcaption>Œuf noir — aspect 0</figcaption></figure>
@@ -60,16 +60,29 @@
 <p>Une nouvelle entité <code>ballista:illager_dragon_hunter</code> accompagne les mécanismes d'hostilité, d'alarme et de protection des camps. Ce <strong>chasseur illageois</strong> est distinct du marchand villageois <strong>chasseur de dragons</strong> documenté dans la partie historique. Les coffres de tanières de pillards ont leurs propres tables de butin : aucun objet précis n'est garanti à chaque coffre.</p>
 </section>
 <section id="raids-02710" class="v27-section">
-<p class="eyebrow">ÉVÉNEMENT DE COMBAT</p><h2>Mauvais présage draconique et raids I à V</h2>
-<div class="v27-omen-gallery" aria-label="Textures des cinq objets de mauvais présage draconique">
-<figure><img src="generated/icons/draconic_omen_1.png" alt="Mauvais présage draconique I" width="80" height="80" loading="lazy"><figcaption>Niveau I</figcaption></figure>
-<figure><img src="generated/icons/draconic_omen_2.png" alt="Mauvais présage draconique II" width="80" height="80" loading="lazy"><figcaption>Niveau II</figcaption></figure>
-<figure><img src="generated/icons/draconic_omen_3.png" alt="Mauvais présage draconique III" width="80" height="80" loading="lazy"><figcaption>Niveau III</figcaption></figure>
-<figure><img src="generated/icons/draconic_omen_4.png" alt="Mauvais présage draconique IV" width="80" height="80" loading="lazy"><figcaption>Niveau IV</figcaption></figure>
-<figure><img src="generated/icons/draconic_omen_5.png" alt="Mauvais présage draconique V" width="80" height="80" loading="lazy"><figcaption>Niveau V</figcaption></figure>
+<p class="eyebrow">5 FIOLES · 5 NIVEAUX DE COMBAT</p>
+<h2>Mauvais présage draconique : les effets des fioles I à V</h2>
+<p>Chaque fiole se <strong>boit</strong> pendant 32 ticks (1,6 s à 20 TPS). Elle remplace l'ancien effet <strong>Mauvais présage</strong> par le niveau I, II, III, IV ou V correspondant pour <strong>120 000 ticks (100 minutes)</strong> ; une bouteille vide est rendue. Ces fioles n'ajoutent pas cinq effets élémentaires : elles règlent le <strong>niveau de Mauvais présage</strong> et, lors d'un raid de village, la composition du renfort draconique.</p>
+<div class="v27-omen-gallery" aria-label="Textures originales des cinq fioles">
+<figure><img src="generated/icons/draconic_omen_1.png" alt="Texture originale Mauvais présage draconique I" width="80" height="80" loading="lazy"><figcaption>Fiole I</figcaption></figure>
+<figure><img src="generated/icons/draconic_omen_2.png" alt="Texture originale Mauvais présage draconique II" width="80" height="80" loading="lazy"><figcaption>Fiole II</figcaption></figure>
+<figure><img src="generated/icons/draconic_omen_3.png" alt="Texture originale Mauvais présage draconique III" width="80" height="80" loading="lazy"><figcaption>Fiole III</figcaption></figure>
+<figure><img src="generated/icons/draconic_omen_4.png" alt="Texture originale Mauvais présage draconique IV" width="80" height="80" loading="lazy"><figcaption>Fiole IV</figcaption></figure>
+<figure><img src="generated/icons/draconic_omen_5.png" alt="Texture originale Mauvais présage draconique V" width="80" height="80" loading="lazy"><figcaption>Fiole V</figcaption></figure>
 </div>
-<div class="table-scroll"><table><thead><tr><th>Présage</th><th>Dragons définis par vague</th><th>Variante</th></tr></thead><tbody><tr><td>I</td><td>1</td><td>Adolescent possible</td></tr><tr><td>II</td><td>1</td><td>Adolescent possible</td></tr><tr><td>III</td><td>1</td><td>Cavalier illageois possible</td></tr><tr><td>IV</td><td>3</td><td>Cavalier illageois possible</td></tr><tr><td>V</td><td>3</td><td>Cavalier illageois possible</td></tr></tbody></table></div>
-<p>La potion de présage déclenche les règles de raid ; les vagues utilisent les dragons disponibles, l'état du raid et une barre de progression. Les succès <strong>Héros légendaire I à V</strong> sont reliés à la victoire et à des récompenses de type <strong>Héros du village</strong>. Le nombre affiché est la configuration des vagues dans le code et non une garantie de génération sans obstacle.</p>
+<p><strong>Les dragons noirs arrivent à la dernière vague du raid, pas à chaque vague.</strong> Le système tente leur apparition dans des zones chargées et libres. Il peut attendre si aucun emplacement convenable n'est trouvé.</p>
+<div class="table-scroll"><table><thead><tr><th>Fiole</th><th>Renfort draconique final prévu</th><th>Chasseur de dragons illageois</th><th>Récompense</th></tr></thead><tbody>
+<tr><td>I</td><td>1 dragon noir <strong>adolescent</strong> (60 PV)</td><td>Aucun cavalier</td><td>Héros légendaire I</td></tr>
+<tr><td>II</td><td>1 dragon noir <strong>adolescent</strong> (60 PV)</td><td>Aucun cavalier</td><td>Héros légendaire II</td></tr>
+<tr><td>III</td><td>1 dragon noir <strong>adulte</strong> (120 PV)</td><td><strong>1 chasseur monté sur le dragon</strong></td><td>Héros légendaire III</td></tr>
+<tr><td>IV</td><td>3 dragons noirs <strong>adultes</strong></td><td><strong>1 chasseur monté sur le premier</strong></td><td>Héros légendaire IV</td></tr>
+<tr><td>V</td><td>3 dragons noirs <strong>adultes</strong></td><td><strong>1 chasseur monté sur le premier</strong></td><td>Héros légendaire V</td></tr></tbody></table></div>
+<h3>Le dragon noir et son chasseur illageois monté</h3>
+<p>À partir du niveau III, le mod crée un dragon noir adulte, <strong>l'équipe d'une selle draconique</strong>, invoque un <strong>chasseur de dragons illageois</strong> (`ballista:illager_dragon_hunter`) et appelle <code>startRiding</code> pour le placer sur le dragon. Le chasseur possède <strong>60 PV</strong>, une <strong>armure complète en diamant</strong>, un <strong>bâton draconique</strong>, et tire des <strong>boules de feu</strong> sur une cible visible entre environ <strong>3 et 24 blocs</strong>, toutes les <strong>3 secondes</strong> lorsque l'attaque aboutit. Sa cible est synchronisée avec celle du dragon pendant le raid.</p>
+<p><a href="dragon-noir.html"><strong>Guide illustré du dragon noir et de son cavalier →</strong></a> · <a href="raids-draconiques.html"><strong>Guide complet des cinq fioles, effets et récompenses →</strong></a></p>
+<h3>Récompenses à la victoire</h3>
+<p>Le raid doit être gagné et tous les dragons du renfort doivent être vaincus. Les joueurs participants reçoivent la progression <strong>Héros légendaire I à V</strong> selon le meilleur niveau atteint, ainsi qu'un <strong>Héros du village</strong> du rang correspondant, conservé dans la sauvegarde du mod et réappliqué avec une <strong>durée infinie</strong>. Les niveaux I–V de fiole diffèrent donc aussi par le rang de récompense.</p>
+<p class="small">Sources : DraconicOmenItem, DraconicRaids, DraconicRaidState, IllagerDragonHunter, HunterRules. Le tableau décrit la génération programmée, pas une garantie d'emplacement sans obstacle.</p>
 </section>
 <section id="versions-02710" class="v27-section">
 <h2>Installation et état des vérifications</h2>
