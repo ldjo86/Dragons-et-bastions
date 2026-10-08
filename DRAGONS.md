@@ -1,6 +1,6 @@
 # Dragons : de l'œuf à la monture
 
-**Version documentée : `ballista-fabric-0.27.1+mc26.2.jar`.** Ce guide décrit les règles lues dans les ressources et le code compilé de ce fichier, sans modification du mod. Les essais en jeu restent à effectuer. Un datapack ou un autre mod peut modifier les règles et les ingrédients.
+**Guide historique basé sur `ballista-fabric-0.27.1+mc26.2.jar`.** La version 0.27.10 ajoute le dragon noir, la ponte périodique, les tanières domestiques et les raids draconiques. Lire le **[complément 0.27.10](GUIDE_VERSION_0_27_10.md)** avant de se fier aux anciennes descriptions. Ce guide décrit les règles lues dans les ressources et le code compilé de ce fichier, sans modification du mod. Les essais en jeu restent à effectuer. Un datapack ou un autre mod peut modifier les règles et les ingrédients.
 
 ## Le parcours à suivre
 
