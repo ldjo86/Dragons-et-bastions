@@ -2,7 +2,7 @@
 
 > **Source vérifiée :** ballista-fabric-0.27.10-candidate+mc26.1-26.3-test.jar, analysé le 8 octobre 2026. Ce guide concerne **Dragons et Bastions / Baliste** (identifiant Fabric *ballista*), **pas Realms Reforged**. Il s'agit d'une **version candidate de test**, pas d'une validation de stabilité en jeu.
 >
-> **Navigation :** [Wiki et recettes illustrées](README.md) · [Dragons : guide historique](DRAGONS.md) · [Recettes](RECETTES.md) · [Inventaire du JAR](CONTENU_DU_JAR.md) · [Version HTML](site/maj-0-27-10.html)
+> **Navigation :** [Wiki et recettes illustrées](README.md) · [Dragons : guide historique](DRAGONS.md) · [Recettes](RECETTES.md) · [Inventaire du JAR](CONTENU_DU_JAR.md) · [Version HTML](site/maj-0-27-10.html) · [Dragon noir et fioles](DRAGON_NOIR_ET_RAIDS.md)
 
 ## 1. Compatibilité et contenu exact du paquet
 
@@ -131,23 +131,39 @@ Les trésors possibles comprennent notamment arbalètes, émeraudes, diamants et
 
 **Sources internes :** IllagerDragonHunter, HunterRules, CampAlarm, CampPrisonRules, CorruptedRules, worldgen/structure/pillager_den.json, structure/taniere_pillards_*.nbt, loot_table/chests/pillager_den*.json.
 
-## 9. Raids draconiques : mauvais présage I à V
+## 9. FIOLES DE MAUVAIS PRÉSAGE DRACONIQUE et chasseur monté
 
-Le mod enregistre **cinq objets consommables de mauvais présage draconique** (I, II, III, IV et V), utilisables comme des boissons. Leur effet est relié au système de **raid** et à ses vagues de dragons.
+![Présage I](site/generated/icons/draconic_omen_1.png) ![Présage II](site/generated/icons/draconic_omen_2.png) ![Présage III](site/generated/icons/draconic_omen_3.png) ![Présage IV](site/generated/icons/draconic_omen_4.png) ![Présage V](site/generated/icons/draconic_omen_5.png)
 
-| Niveau | Nombre de dragons défini par vague | Particularité de la fonction |
-|---|---:|---|
-| I | 1 | Variante adolescente possible |
-| II | 1 | Variante adolescente possible |
-| III | 1 | Cavaliers illageois possibles |
-| IV | 3 | Cavaliers illageois possibles |
-| V | 3 | Cavaliers illageois possibles |
+Le mod enregistre cinq fioles à boire (`ballista:draconic_omen_1` à `ballista:draconic_omen_5`). Leur utilisation dure **32 ticks** (1,6 seconde) et applique **Mauvais présage I à V** pendant **120 000 ticks**, soit **100 minutes** à 20 TPS. L'ancien Mauvais présage est retiré, puis l'effet de la fiole est appliqué. Le contenant rendu est une bouteille de verre ordinaire.
 
-Ces nombres viennent des **fonctions de configuration du raid** : le nombre réellement présent dépend aussi de la progression, des zones accessibles et des conditions de génération. Les raids suivent les participants, la santé des ennemis et la fin des vagues. Le système utilise aussi une **barre de raid**.
+**L'effet de potion est le même pour les cinq fioles : Mauvais présage.** Leur niveau détermine la puissance du présage, la composition du renfort et la récompense du raid. Elles ne confèrent pas cinq effets élémentaires distincts.
 
-Vaincre un raid draconique de niveau I à V est associé à une série de **défis Héros légendaire I à V**, avec des réductions **Héros du village** décrites comme permanentes dans les traductions. Les critères des défis JSON sont marqués **minecraft:impossible** : leur attribution est gérée **par le code du mod**, pas par une action vanilla indépendante.
+Le jeu **déploie les renforts draconiques à la dernière vague** du raid de village, et non à chaque vague :
 
-**Sources internes :** DraconicOmenItem, DraconicRaids.drink/wave/spawn/died, DraconicRaidState.dragons/adolescent/mounted/canReward, advancement/legendary_hero/level_1 à level_5.json, lang/fr_fr.json.
+| Niveau de fiole | Dragons noirs de la dernière vague | Chasseur de dragons illageois monté | Progression récompensée |
+|---|---|---|---|
+| **I** | **1 adolescent** (60 PV de base) | Non | Héros légendaire I |
+| **II** | **1 adolescent** (60 PV de base) | Non | Héros légendaire II |
+| **III** | **1 adulte** (120 PV de base) | **Oui, un chasseur sur ce dragon** | Héros légendaire III |
+| **IV** | **3 adultes** | **Oui, un seul sur le premier dragon** | Héros légendaire IV |
+| **V** | **3 adultes** | **Oui, un seul sur le premier dragon** | Héros légendaire V |
+
+### Un vrai dragon noir monté par un illageois
+
+À partir du niveau **III**, `DraconicRaids.spawn` équipe le **premier dragon noir** d'une **selle draconique**, crée un **`ballista:illager_dragon_hunter`**, l'équipe, puis utilise `DraconicRaids.ride` (appel `startRiding`) pour le faire **monter sur le dragon**. La routine de raid synchronise ensuite la cible du dragon avec celle de son passager ; le dragon conserve son autonomie.
+
+Le chasseur illageois possède **60 PV de base**, une **armure complète en diamant** et un **bâton draconique**. Ce dernier permet une attaque à distance par **boules de feu**, lorsque la cible est à environ **3 à 24 blocs** et dans sa ligne de vue, avec **60 ticks** de recharge entre deux tirs validés. Son code de butin dépose **un cœur noir** et peut produire **une ou deux cartes de tanière illageoise** si des structures correspondantes sont repérées.
+
+À partir de **IV**, les deux dragons noirs supplémentaires ne transportent pas de chasseur dans cette fonction. Le nombre et l'âge des dragons sont des **valeurs programmées**, soumis au chargement des chunks, aux emplacements libres, aux restrictions du monde et à la réussite du montage.
+
+### Victoire et récompenses
+
+Le code attend la **victoire du raid vanilla** et l'élimination de **tous les dragons supplémentaires** avant de marquer le raid achevé. Il enregistre le meilleur rang du joueur et accorde les avancements **Héros légendaire I à V** jusqu'au rang obtenu. Il applique aussi un effet **Héros du village** correspondant avec une **durée infinie**, restauré depuis les données conservées par le mod.
+
+**Fichiers pour les joueurs :** [Guide illustré des cinq fioles](site/raids-draconiques.html) · [Dragon noir et chasseur monté](site/dragon-noir.html) · [Explications exhaustives et sources](DRAGON_NOIR_ET_RAIDS.md).
+
+**Sources internes :** `DraconicOmenItem`, `DraconicRaids.drink/absorb/wave/ride/spawn/beforeTick/afterTick/playerTick`, `DraconicRaidState.dragons/adolescent/mounted/canReward`, `IllagerDragonHunter`, `HunterRules.combat/loot`, `DraconicRaidMixin`, avancements Héros légendaire, traductions FR/EN.
 
 ## 10. Combat et déplacement des dragons
 
